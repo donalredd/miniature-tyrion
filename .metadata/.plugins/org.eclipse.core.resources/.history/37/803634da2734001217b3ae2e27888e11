@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <repositories>
+   <repository>
+      <id>repository.jboss.org-public</id>
+      <name>JBoss.org Maven repository</name>
+      <url>https://repository.jboss.org/nexus/content/groups/public</url>
+    </repository> 
+    </repositories>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.receipt.vault.root</groupId>
+  <artifactId>RootTracker</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>RootTracker</name>
+  <modules>
+  
+    <module>ItemTracker</module>
+	<module>webapp</module>
+  </modules>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.springframework.version>3.0.7.RELEASE</org.springframework.version>
+		<org.hibernate.version>3.6.3.Final</org.hibernate.version>
+		<aspectj.version>1.6.11</aspectj.version>
+		<jpa.version>2.0.0</jpa.version>
+		<hibernate.version>3.5.6-Final</hibernate.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cxf.version>2.3.3</cxf.version>
+	</properties>
+
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>sonar-maven-plugin</artifactId>
+
+				</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.5</source>
+						<target>1.5</target>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+
+
+	</build>
+	
+	
+</project>
